@@ -37,6 +37,8 @@ server.js
 
 index.html
 
+chatbot-script.js
+
 .env
 
 .gitignore
@@ -44,6 +46,17 @@ index.html
 chatbot-style.css
 
 package.json
+
+# Mentiune: 
+
+In fisierul .env adaugati urmatoarea linie:
+
+CLAUDE_API_KEY=YOUR-API-KEY  (puneti al vostru api-key)
+
+In fisierul .gitignore adaugati urmatoarele liniI:
+
+node_modules/
+   .env
 
 
 # 5. Adăugați conținutul corespunzător în fiecare fișier (așa cum ați furnizat în atașamente).
@@ -54,7 +67,6 @@ Change API-KEY in fisierele urmatoare:
 server.js
 
 chatbot-script.js
-
 
 
 # 6. Rulați serverul in CMD din acel folder prin comanda:
