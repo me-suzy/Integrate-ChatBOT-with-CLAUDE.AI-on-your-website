@@ -51,7 +51,9 @@ Change API-KEY in fisierele urmatoare:
 
 .env 
 
-server.js 
+server.js
+
+chatbot-script.js
 
 
 
