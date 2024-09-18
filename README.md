@@ -5,7 +5,13 @@
 
 Descărcați și instalați Node.js de la https://nodejs.org/
 
-Verificați instalarea rulând node --version și npm --version în CMD
+Verificați instalarea rulând în CMD comenzile:
+
+node --version 
+
+si
+
+npm --version 
 
 
 # 2. Creați un director pentru proiect. 
@@ -39,9 +45,12 @@ package.json
 
 
 # 5. Adăugați conținutul corespunzător în fiecare fișier (așa cum ați furnizat în atașamente).
-Change API-KEY.
+Change API-KEY in fisierele urmatoare:
 
-Asigurați-vă că fișierele .env si server.js  conțin API-KEY Claude corectă
+.env 
+
+server.js 
+
 
 
 # 6. Rulați serverul in CMD din acel folder prin comanda:
