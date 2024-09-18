@@ -4,6 +4,7 @@
 # 1. Instalați Node.js:
 
 Descărcați și instalați Node.js de la https://nodejs.org/
+
 Verificați instalarea rulând node --version și npm --version în CMD
 
 
@@ -11,6 +12,7 @@ Verificați instalarea rulând node --version și npm --version în CMD
 Puteti crea in mod simplu acest folder in care sa adaugati fisierele, sau puteti sa creati cu cmd, astfel:
 
 mkdir chatbot-claudeai
+
 cd chatbot-claudeai
 
 # 3. Inițializați proiectul Node.js cu ajutorul CMD din acel folder:
