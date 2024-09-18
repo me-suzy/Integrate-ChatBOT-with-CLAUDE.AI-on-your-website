@@ -58,9 +58,9 @@ node server.js
 
 Deschideți un browser web
 
-Navigați la http://localhost:3000
+Navigați la http://localhost:3000 
 
-Testați funcționalitatea chatbot-ului din pagina index.html (se deschide automat pagina cand accesati http://localhost:3000/ 
+Se va deschide automat pagina index.html 
 
 Introduceți un mesaj în caseta de chat
 
