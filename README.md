@@ -1,4 +1,4 @@
-# Integrate-ChatBOT-with-CLAUDE.AI-on-your-website (Step by step)
+# Integrate ChatBOT with CLAUDE.AI on your website (Step by step)
 
 
 # 1. Instalați Node.js:
