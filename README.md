@@ -23,7 +23,11 @@ cd chatbot-claudeai
 npm init -y
 
 # 4. Instalați dependențele necesare in CMD din acel folder:
-npm install express cors 
+npm install 
+
+express cors
+
+node-fetch
 
 node-fetch@2 dotenv
 
