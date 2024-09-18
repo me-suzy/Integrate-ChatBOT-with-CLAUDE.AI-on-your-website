@@ -5,19 +5,38 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+// Middleware pentru logging
+app.use((req, res, next) => {
+    console.log(`Request for: ${req.url}`);
+    next();
+});
+
+// Configurare CORS
 app.use(cors({
     origin: 'http://localhost:3000'
 }));
 
+// Middleware pentru parsare JSON și servire fișiere statice
 app.use(express.json());
 app.use(express.static(__dirname));
 
+// Servire fișiere JavaScript
+app.use('/js', express.static(path.join(__dirname, 'js')));
+
 const CLAUDE_API_KEY = 'YOUR-API-KEY';
 
+// Rută pentru pagina principală
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// Rută specifică pentru chatbot-script.js
+app.get('/chatbot-script.js', (req, res) => {
+    res.setHeader('Content-Type', 'application/javascript');
+    res.sendFile(path.join(__dirname, 'chatbot-script.js'));
+});
+
+// Rută pentru procesarea mesajelor chat
 app.post('/chat', async (req, res) => {
     try {
         console.log('Received request body:', req.body);
@@ -30,7 +49,7 @@ app.post('/chat', async (req, res) => {
                 'anthropic-version': '2023-06-01'
             },
             body: JSON.stringify({
-                model: "claude-2.1",  // Actualizat la versiunea corectă
+                model: "claude-2.1",
                 max_tokens: 1000,
                 messages: req.body.messages
             })
@@ -51,6 +70,7 @@ app.post('/chat', async (req, res) => {
     }
 });
 
+// Pornire server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
