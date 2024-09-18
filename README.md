@@ -19,15 +19,22 @@ cd chatbot-claudeai
 npm init -y
 
 # 4. Instalați dependențele necesare in CMD din acel folder:
-npm install express cors node-fetch@2 dotenv
+npm install express cors 
+
+node-fetch@2 dotenv
 
 # 5. Adaugati in folder fișierele necesare:
 
 server.js
+
 index.html
+
 .env
+
 .gitignore
+
 chatbot-style.css
+
 package.json
 
 
@@ -35,6 +42,7 @@ package.json
 Configurați variabilele de mediu:
 
 Change API-KEY.
+
 Asigurați-vă că fișierele .env si server.js  conțin API-KEY Claude corectă
 
 
@@ -44,10 +52,13 @@ node server.js
 # 7. Accesați chatbot-ul:
 
 Deschideți un browser web
+
 Navigați la http://localhost:3000
 
 Testați funcționalitatea chatbot-ului din pagina index.html (se deschide automat pagina cand accesati http://localhost:3000/ 
 
 Introduceți un mesaj în caseta de chat
+
 Apăsați butonul "Trimite" sau apăsați Enter
+
 Verificați răspunsul primit de la Claude AI
