@@ -39,8 +39,6 @@ package.json
 
 
 # 5. Adăugați conținutul corespunzător în fiecare fișier (așa cum ați furnizat în atașamente).
-Configurați variabilele de mediu:
-
 Change API-KEY.
 
 Asigurați-vă că fișierele .env si server.js  conțin API-KEY Claude corectă
