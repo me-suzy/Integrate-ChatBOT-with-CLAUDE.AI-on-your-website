@@ -9,8 +9,6 @@ Verificați instalarea rulând în CMD comenzile:
 
 node --version 
 
-si
-
 npm --version 
 
 
